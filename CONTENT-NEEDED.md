@@ -1,36 +1,40 @@
 # Content checklist — Jhalak Core Drilling website
 
-Everything marked `[PLACEHOLDER]` or with a yellow **TODO** flag in the site
-needs to be replaced with real information before this goes live. Collect
-these from your dad and drop them in here (or send them to Mahi directly).
+Status as of the latest content pass. Everything below is either done or the
+few remaining open items.
 
 ## Business basics
-- [ ] Official business name as it should appear on the site (confirm "Jhalak Core Drilling" is exact)
-- [ ] Phone number(s) for the contact page and header
-- [ ] Business email address (once the new @jhalakcoredrilling.co.in address is set up)
-- [ ] Service area — which cities/districts/states does he work in?
-- [ ] Years in business / years of experience
-- [ ] Approximate number of projects completed (if he wants to state a number)
-- [ ] Working days/hours, if relevant to display
+- [x] Business name: Jhalak Core Drilling
+- [x] Phone: +91 98260 43970
+- [ ] Final business email mailbox name — using `info@jhalakcoredrilling.co.in` as a placeholder; confirm once the domain/mailbox is actually set up (could be `info@`, `contact@`, etc.)
+- [x] Service area: All over India
+- [x] Years in business: 35+ years
+- [x] Projects completed: 500+
+- [x] Working days/hours: All days, 8:00 AM – 6:00 PM
+- [x] No physical office — all business conducted by phone (reflected on Contact page)
+- [x] No registration/GST details shown (per client's instruction)
 
 ## About page
-- [ ] 2-3 sentences on how the business started and who runs it
-- [ ] Anything that builds trust: experience with government tenders, certifications, notable long-term clients (only if he's comfortable naming them)
+- [x] Founding story: started by Mr. Shankarlal, son (client) joined at 16, running it independently since 18
+- [x] Team: 20+ labourers
+- [x] Equipment: 4 high-power hydraulic rigs, specially designed and sourced from Nagpur, India
+- [x] Government tender experience, ongoing
+- [x] Note on client confidentiality (notable clients not named)
 
 ## Services page
-- [ ] Exact list of services offered (confirm: private testing, government testing, core drilling — anything else?)
-- [ ] Equipment/method used for drilling (even a plain-language description helps)
-- [ ] Typical depth range and turnaround time, if he wants to state these
-- [ ] Any standards/specifications followed for government work
+- [x] Services: Private + government soil testing, core drilling, sample handling/delivery
+- [x] Pricing: Soil testing ₹1,000/meter, Rock testing/drilling ₹1,600/meter
+- [x] Transportation from Indore, India excluded — borne by client
+- [x] Equipment: hydraulic drilling machines
+- [ ] Certifications/standards followed for government tender work — not yet provided, currently flagged in the page rather than guessed
 
 ## Gallery
-- [ ] 6-9 photos: rig/equipment on site, sample collection in progress, packed/labelled samples, team at work, completed sites
-- [ ] Photos should be landscape orientation where possible, decent resolution (phone photos are fine)
+- [ ] **On hold per client** — 6-9 real photos to be added later (rig/equipment, sample collection, packed samples, team at work, completed sites)
 
-## Legal / footer
-- [ ] Registered business address, if he wants it listed (not required, some proprietors leave this off)
-- [ ] Any GST number / registration details he wants displayed (optional)
+## Legal/footer
+- [x] No address or registration details shown, per instruction
 
 ---
-Once this is filled in, ping Mahi and she'll drop the real content into the
-site before final deployment.
+Once the two remaining open items above are settled (final email mailbox, and
+whether to state any certifications), the text content of the site is ready
+for final review before going live.

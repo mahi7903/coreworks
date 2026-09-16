@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Jhalak Core Drilling</title>
+<meta name="description" content="Get in touch with Jhalak Core Drilling for a soil testing or core drilling quote." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">Jhalak <span>Core Drilling</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <span class="nav-phone">📞 [PLACEHOLDER PHONE]</span>
+      <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p>Tell us about your project and we'll get back to you with a quote.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <h2>Contact Details</h2>
+      <div class="info-item">
+        <div class="icon">📞</div>
+        <div><strong>Phone</strong><br/>[PLACEHOLDER PHONE]<span class="todo-flag">TODO</span></div>
+      </div>
+      <div class="info-item">
+        <div class="icon">✉️</div>
+        <div><strong>Email</strong><br/>[PLACEHOLDER EMAIL — e.g. info@jhalakcoredrilling.co.in]<span class="todo-flag">TODO</span></div>
+      </div>
+      <div class="info-item">
+        <div class="icon">📍</div>
+        <div><strong>Service Area</strong><br/>[PLACEHOLDER REGION / CITIES]<span class="todo-flag">TODO</span></div>
+      </div>
+      <div class="info-item">
+        <div class="icon">🕐</div>
+        <div><strong>Availability</strong><br/>[PLACEHOLDER hours/days]<span class="todo-flag">TODO</span></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div id="form-success" class="form-success">
+        Thanks — your enquiry has been received. We'll get back to you shortly.
+      </div>
+
+      <!--
+        Netlify Forms: the data-netlify="true" attribute + hidden "form-name"
+        field are all Netlify needs to auto-detect this form and start
+        capturing submissions once the site is deployed on Netlify.
+        No backend/server code required.
+      -->
+      <form id="enquiry-form" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="enquiry" />
+        <p style="display:none;">
+          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-row">
+          <label for="project-type">Project Type</label>
+          <select id="project-type" name="project-type">
+            <option value="private">Private Project</option>
+            <option value="government">Government Project</option>
+            <option value="not-sure">Not Sure</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="location">Site Location</label>
+          <input type="text" id="location" name="location" placeholder="City / area" />
+        </div>
+        <div class="form-row">
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" placeholder="Tell us about the site and what you need tested"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Enquiry</button>
+        <p class="form-note">We usually respond within 24 hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Jhalak Core Drilling</h4>
+        <p>Professional soil testing sample collection for private and government projects.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📞 [PLACEHOLDER PHONE]</li>
+          <li>✉️ [PLACEHOLDER EMAIL]</li>
+          <li>📍 [PLACEHOLDER ADDRESS / SERVICE AREA]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Jhalak Core Drilling. All rights reserved.</span>
+      <span>Site by Mahi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

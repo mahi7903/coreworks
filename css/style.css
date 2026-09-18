@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Jhalak Core Drilling — main stylesheet
+   Jhalak Diamond Drilling, main stylesheet
    ========================================================================== */
 
 :root {
@@ -113,9 +113,11 @@ img { max-width: 100%; display: block; }
 }
 .nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 16px 0;
+  gap: 12px;
 }
 .brand {
   display: flex;
@@ -206,6 +208,22 @@ img { max-width: 100%; display: block; }
   padding: 20px;
   font-size: 0.95rem;
 }
+.hero-media.has-photo {
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
+  display: block;
+}
+.hero-media.has-photo .media-photo,
+.hero-media.has-photo.media-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius);
+}
 
 /* Page hero (inner pages, no stats) --------------------------------------*/
 .page-hero {
@@ -277,6 +295,17 @@ img { max-width: 100%; display: block; }
   font-size: 0.9rem;
   text-align: center;
   padding: 12px;
+  overflow: hidden;
+}
+.gallery-item.has-photo {
+  border: 1px solid var(--color-border);
+  padding: 0;
+}
+.gallery-item.has-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* CTA band ------------------------------------------------------------------*/
@@ -390,9 +419,10 @@ img { max-width: 100%; display: block; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-}
 
-@media (max-width: 680px) {
+  /* Below 900px the full nav (links + phone + button) no longer fits on
+     one line on tablets and small laptop windows, so switch to the
+     hamburger menu here rather than waiting until phone widths. */
   .nav-links, .nav-cta .nav-phone { display: none; }
   .nav-toggle { display: flex; }
   .nav.open .nav-links {
@@ -406,7 +436,21 @@ img { max-width: 100%; display: block; }
     border-bottom: 1px solid var(--color-border);
     padding: 16px 20px;
     gap: 16px;
+    z-index: 60;
   }
+}
+
+@media (max-width: 480px) {
+  .brand { font-size: 1rem; white-space: nowrap; }
+  .nav-cta .btn-primary { padding: 10px 16px; font-size: 0.9rem; }
+}
+
+@media (max-width: 360px) {
+  .brand { font-size: 0.85rem; }
+  .nav-cta .btn-primary { padding: 8px 12px; font-size: 0.8rem; }
+}
+
+@media (max-width: 680px) {
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr; }

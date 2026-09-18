@@ -1,3 +1,4 @@
+
 # Jhalak Core Drilling — Website
 
 Business website for Jhalak Core Drilling, a soil testing and core drilling
@@ -49,3 +50,4 @@ push to `main`. See the project handoff notes for domain + DNS setup steps.
 ## Author
 
 Built by Mahi (freelance) for Jhalak Core Drilling.
+
